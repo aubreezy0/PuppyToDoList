@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C0EB38C52315A3070034AAC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38C42315A3070034AAC6 /* AppDelegate.swift */; };
-		C0EB38C72315A3070034AAC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38C62315A3070034AAC6 /* ViewController.swift */; };
 		C0EB38CA2315A3070034AAC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB38C82315A3070034AAC6 /* Main.storyboard */; };
 		C0EB38CD2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38CB2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodeld */; };
 		C0EB38CF2315A3080034AAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EB38CE2315A3080034AAC6 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		C0EB38C12315A3070034AAC6 /* A Puppy's To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A Puppy's To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0EB38C42315A3070034AAC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0EB38C62315A3070034AAC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0EB38C92315A3070034AAC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0EB38CC2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A_Puppy_s_To_Do_List.xcdatamodel; sourceTree = "<group>"; };
 		C0EB38CE2315A3080034AAC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				C0EB38C42315A3070034AAC6 /* AppDelegate.swift */,
-				C0EB38C62315A3070034AAC6 /* ViewController.swift */,
 				C0EB38C82315A3070034AAC6 /* Main.storyboard */,
 				C0EB38CE2315A3080034AAC6 /* Assets.xcassets */,
 				C0EB38D02315A3080034AAC6 /* LaunchScreen.storyboard */,
@@ -139,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0EB38CD2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodeld in Sources */,
-				C0EB38C72315A3070034AAC6 /* ViewController.swift in Sources */,
 				C0EB38C52315A3070034AAC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
