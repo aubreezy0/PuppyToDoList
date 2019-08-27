@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,6 +40,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmC-Ub-hNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="49"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QP2-xU-pFl">
+            <objects>
+                <viewController id="sbU-Lh-WAk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kzN-dS-EwM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QBc-U7-cM8">
+                                <rect key="frame" x="75" y="190" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Important " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-0W-J3T">
+                                <rect key="frame" x="124.5" y="262" width="126.5" height="74"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XIE-l2-ww6">
+                                <rect key="frame" x="163" y="352" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA8-9M-CEO">
+                                <rect key="frame" x="100" y="474" width="175" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Add To Do">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="To Do Item:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooA-vv-ydK">
+                                <rect key="frame" x="120" y="136" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qVj-qJ-thI" firstAttribute="trailing" secondItem="aA8-9M-CEO" secondAttribute="trailing" constant="100" id="4v8-UK-AZh"/>
+                            <constraint firstItem="QBc-U7-cM8" firstAttribute="leading" secondItem="qVj-qJ-thI" secondAttribute="leading" constant="75" id="5qe-fw-G9s"/>
+                            <constraint firstItem="aA8-9M-CEO" firstAttribute="leading" secondItem="qVj-qJ-thI" secondAttribute="leading" constant="100" id="BuJ-do-hYe"/>
+                            <constraint firstItem="jgG-0W-J3T" firstAttribute="centerX" secondItem="kzN-dS-EwM" secondAttribute="centerX" id="JCt-7d-u0u"/>
+                            <constraint firstItem="ooA-vv-ydK" firstAttribute="centerX" secondItem="kzN-dS-EwM" secondAttribute="centerX" id="Kky-iL-etV"/>
+                            <constraint firstItem="qVj-qJ-thI" firstAttribute="trailing" secondItem="QBc-U7-cM8" secondAttribute="trailing" constant="75" id="KrJ-dm-vE5"/>
+                            <constraint firstItem="XIE-l2-ww6" firstAttribute="centerX" secondItem="kzN-dS-EwM" secondAttribute="centerX" id="db1-PA-tbY"/>
+                            <constraint firstItem="QBc-U7-cM8" firstAttribute="top" secondItem="ooA-vv-ydK" secondAttribute="bottom" constant="33" id="fqR-qC-H29"/>
+                            <constraint firstItem="aA8-9M-CEO" firstAttribute="centerX" secondItem="kzN-dS-EwM" secondAttribute="centerX" id="sYf-ZC-2vO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qVj-qJ-thI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tz-89-zhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="47.226386806596707"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tvM-Vs-ivO">
