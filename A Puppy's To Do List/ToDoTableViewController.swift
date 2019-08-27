@@ -10,12 +10,25 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
 
+    
+    var toDos : [ToDo] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let toDo1 = ToDo()
+        toDo1.name = "Sleep"
+        
+        let toDo2 = ToDo()
+        toDo2.name = "Eat"
+        toDo2.important = true
+        
+        let toDo3 = ToDo()
+        toDo3.name = "Play"
+        
+        toDos = [toDo1, toDo2, toDo3]
 
     }
 
-    var toDos = ["Eat", "Sleep", "Play"]
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -25,7 +38,11 @@ class ToDoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        cell.textLabel?.text = toDos[indexPath.row]
+        if toDos[indexPath.row].important {
+            cell.textLabel?.text = "‼️ \(toDos[indexPath.row].name)"
+        } else {
+            cell.textLabel?.text = toDos[indexPath.row].name
+        }
 
         return cell
     }
