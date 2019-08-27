@@ -37,7 +37,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="bk6-qn-xfQ"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="sbU-Lh-WAk" kind="show" id="dSX-wH-1PS"/>
+                        <segue destination="sbU-Lh-WAk" kind="show" identifier="moveToAddToDo" id="dSX-wH-1PS"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmC-Ub-hNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
