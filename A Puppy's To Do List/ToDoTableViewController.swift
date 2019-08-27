@@ -15,15 +15,17 @@ class ToDoTableViewController: UITableViewController {
 
     }
 
+    var toDos = ["Eat", "Sleep", "Play"]
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return toDos.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = UITableViewCell()
+        
+        cell.textLabel?.text = toDos[indexPath.row]
 
         return cell
     }
