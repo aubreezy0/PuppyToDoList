@@ -35,10 +35,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="A Puppy's To Do List" id="NuE-d0-KPD">
                         <barButtonItem key="backBarButtonItem" title="Back" id="bk6-qn-xfQ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Agz-Wf-1Ae">
+                            <connections>
+                                <segue destination="sbU-Lh-WAk" kind="show" identifier="moveToAddToDo" id="bIE-NC-zkx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="sbU-Lh-WAk" kind="show" identifier="moveToAddToDo" id="dSX-wH-1PS"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmC-Ub-hNr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
