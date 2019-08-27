@@ -10,12 +10,17 @@ import UIKit
 
 class addToDoViewController: UIViewController {
 
+    @IBOutlet weak var enterToDoField: UITextField!
+    
+    @IBOutlet weak var markImportantSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addToDoButton(_ sender: Any) {
+    }
+    
 
 }

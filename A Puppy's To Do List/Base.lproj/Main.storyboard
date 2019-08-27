@@ -70,6 +70,9 @@
                                 <state key="normal" title="Add To Do">
                                     <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addToDoButton:" destination="sbU-Lh-WAk" eventType="touchUpInside" id="SeZ-D6-0dx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Do Item:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooA-vv-ydK">
                                 <rect key="frame" x="120" y="136" width="135" height="30"/>
@@ -107,6 +110,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qVj-qJ-thI"/>
                     </view>
+                    <connections>
+                        <outlet property="enterToDoField" destination="QBc-U7-cM8" id="2Up-5T-S5c"/>
+                        <outlet property="markImportantSwitch" destination="XIE-l2-ww6" id="6Es-KV-cDZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tz-89-zhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
