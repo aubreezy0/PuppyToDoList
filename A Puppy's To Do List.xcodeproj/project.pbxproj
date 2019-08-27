@@ -12,6 +12,7 @@
 		C0EB38CD2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38CB2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodeld */; };
 		C0EB38CF2315A3080034AAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0EB38CE2315A3080034AAC6 /* Assets.xcassets */; };
 		C0EB38D22315A3080034AAC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB38D02315A3080034AAC6 /* LaunchScreen.storyboard */; };
+		C0EB38DA2315ACFB0034AAC6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38D92315ACFB0034AAC6 /* ToDoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C0EB38CE2315A3080034AAC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0EB38D12315A3080034AAC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0EB38D32315A3080034AAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0EB38D92315ACFB0034AAC6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C0EB38C42315A3070034AAC6 /* AppDelegate.swift */,
 				C0EB38C82315A3070034AAC6 /* Main.storyboard */,
+				C0EB38D92315ACFB0034AAC6 /* ToDoTableViewController.swift */,
 				C0EB38CE2315A3080034AAC6 /* Assets.xcassets */,
 				C0EB38D02315A3080034AAC6 /* LaunchScreen.storyboard */,
 				C0EB38D32315A3080034AAC6 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0EB38CD2315A3070034AAC6 /* A_Puppy_s_To_Do_List.xcdatamodeld in Sources */,
+				C0EB38DA2315ACFB0034AAC6 /* ToDoTableViewController.swift in Sources */,
 				C0EB38C52315A3070034AAC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
