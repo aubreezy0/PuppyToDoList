@@ -11,7 +11,6 @@ import UIKit
 class addToDoViewController: UIViewController {
 
     @IBOutlet weak var enterToDoField: UITextField!
-    
     @IBOutlet weak var markImportantSwitch: UISwitch!
     
     override func viewDidLoad() {
@@ -20,6 +19,12 @@ class addToDoViewController: UIViewController {
     }
     
     @IBAction func addToDoButton(_ sender: Any) {
+        var newToDo = ToDo()
+        newToDo.important = markImportantSwitch.isOn
+        
+        if let enteredToDo = enterToDoField.text {
+            newToDo.name = enteredToDo
+        }
     }
     
 
