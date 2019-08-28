@@ -12,14 +12,15 @@ class addToDoViewController: UIViewController {
 
     @IBOutlet weak var enterToDoField: UITextField!
     @IBOutlet weak var markImportantSwitch: UISwitch!
-    
+    var toDoTableVC : ToDoTableViewController? = nil
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
     @IBAction func addToDoButton(_ sender: Any) {
-        var newToDo = ToDo()
+        let newToDo = ToDo()
         newToDo.important = markImportantSwitch.isOn
         
         if let enteredToDo = enterToDoField.text {

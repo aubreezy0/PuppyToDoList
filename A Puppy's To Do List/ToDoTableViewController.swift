@@ -46,5 +46,10 @@ class ToDoTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addToDoVC = segue.destination as? addToDoViewController {
+            addToDoVC.toDoTableVC = self
+        }
+    }
 }
