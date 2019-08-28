@@ -23,9 +23,10 @@ class addToDoViewController: UIViewController {
         let newToDo = ToDo()
         newToDo.important = markImportantSwitch.isOn
         
-        if let enteredToDo = enterToDoField.text {
-            newToDo.name = enteredToDo
+        if let name = enterToDoField.text {
+            newToDo.name = name
         }
+        toDoTableVC?.toDos.append(newToDo)
     }
     
 
