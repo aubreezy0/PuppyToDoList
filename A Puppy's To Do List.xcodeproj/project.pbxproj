@@ -15,6 +15,7 @@
 		C0EB38DA2315ACFB0034AAC6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38D92315ACFB0034AAC6 /* ToDoTableViewController.swift */; };
 		C0EB38DC2315B8C90034AAC6 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38DB2315B8C90034AAC6 /* ToDo.swift */; };
 		C0EB38DE2315C1E50034AAC6 /* addToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EB38DD2315C1E50034AAC6 /* addToDoViewController.swift */; };
+		C0EB38E0231759070034AAC6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0EB38DF231759070034AAC6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C0EB38D92315ACFB0034AAC6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		C0EB38DB2315B8C90034AAC6 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		C0EB38DD2315C1E50034AAC6 /* addToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToDoViewController.swift; sourceTree = "<group>"; };
+		C0EB38DF231759070034AAC6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		C0EB38B82315A3070034AAC6 = {
 			isa = PBXGroup;
 			children = (
+				C0EB38DF231759070034AAC6 /* README.md */,
 				C0EB38DB2315B8C90034AAC6 /* ToDo.swift */,
 				C0EB38C32315A3070034AAC6 /* A Puppy's To Do List */,
 				C0EB38C22315A3070034AAC6 /* Products */,
@@ -133,6 +136,7 @@
 			files = (
 				C0EB38D22315A3080034AAC6 /* LaunchScreen.storyboard in Resources */,
 				C0EB38CF2315A3080034AAC6 /* Assets.xcassets in Resources */,
+				C0EB38E0231759070034AAC6 /* README.md in Resources */,
 				C0EB38CA2315A3070034AAC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
