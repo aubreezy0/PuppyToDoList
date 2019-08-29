@@ -12,19 +12,23 @@ class addToDoViewController: UIViewController {
 
     @IBOutlet weak var enterToDoField: UITextField!
     @IBOutlet weak var markImportantSwitch: UISwitch!
-    
+    var toDoTableVC : ToDoTableViewController? = nil
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
     @IBAction func addToDoButton(_ sender: Any) {
-        var newToDo = ToDo()
+        let newToDo = ToDo()
         newToDo.important = markImportantSwitch.isOn
         
-        if let enteredToDo = enterToDoField.text {
-            newToDo.name = enteredToDo
+        if let name = enterToDoField.text {
+            newToDo.name = name
         }
+        toDoTableVC?.toDos.append(newToDo)
+        toDoTableVC?.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
     
 

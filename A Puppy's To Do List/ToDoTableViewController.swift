@@ -16,16 +16,19 @@ class ToDoTableViewController: UITableViewController {
         super.viewDidLoad()
         
         let toDo1 = ToDo()
-        toDo1.name = "Sleep"
+        toDo1.name = "Beg for treats"
+        
+        let toDo4 = ToDo()
+        toDo4.name = "Chew slippers"
         
         let toDo2 = ToDo()
-        toDo2.name = "Eat"
+        toDo2.name = "Hide chewed slippers"
         toDo2.important = true
         
         let toDo3 = ToDo()
-        toDo3.name = "Play"
+        toDo3.name = "Practice \"Sit\""
         
-        toDos = [toDo1, toDo2, toDo3]
+        toDos = [toDo1, toDo4, toDo2, toDo3]
 
     }
 
@@ -46,5 +49,10 @@ class ToDoTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addToDoVC = segue.destination as? addToDoViewController {
+            addToDoVC.toDoTableVC = self
+        }
+    }
 }
